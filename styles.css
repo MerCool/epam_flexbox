@@ -1,0 +1,205 @@
+@import url('common.css');
+
+.top{
+	flex-direction: row;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+    overflow: hidden;
+    padding: 10px 0px;
+    margin: 0 0 30px 0;
+}
+
+.logo {
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-left: 80px;
+}
+
+.logo:before{
+    content:'';
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.item{
+	display: flex;
+	flex-direction: row;
+    width: 60%;
+}
+
+.list {
+    width: 24%;
+    height: 50px;
+    margin-left: 1%;
+}
+
+.main{
+	justify-content: space-between;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+    overflow: hidden;
+}
+
+.m-text{
+    width: 50%;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+.m-text-title{
+    font-size: 28px;
+}
+
+.m-image{
+    width: 40%;
+    min-height: 360px;
+}
+
+.content{
+	display: flex;
+    margin: 40px 0 0;
+}
+
+.c-block, .c-article, .c-comment{
+    width: 30%;
+}
+
+
+.b-list{
+    min-height: 200px;
+    margin: 0 0 30px 0;
+}
+
+.c-article{
+    font-size: 14px;
+    margin: 0 0 0 4%;
+}
+
+.a-list{
+    margin: 0 0 30px 0;
+    line-height: 1.5em;
+}
+
+.c-comment{
+    font-size: 14px;
+    margin: 0 0 0 4%;
+}
+
+.c-list{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+    line-height: 1.5em;
+}
+
+.ava{
+	flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+	margin-right:20px;
+}
+
+.text{
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+    .content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.c-block {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.b-list {
+		width: 32%;
+	}
+	
+	.c-block, .c-article, .c-comment{
+		
+	}
+
+    .c-article{
+        width: 48%;
+        margin: 0;
+    }
+
+    .c-comment {
+        width: 48%;
+        margin: 0 0 0 4%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+	.main{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.c-block {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+    .item{
+        width: 100%;
+        margin: 30px 0 0;
+    }
+
+    .list {
+        margin: 0 1% 0 0;
+    }
+
+    .m-text{
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .m-image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .c-block{
+		display: flex;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .b-list {
+        margin: 0 0 30px 0;
+    }
+
+    .c-article{
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .c-comment {
+        width: 100%;
+        margin: 0;
+    }
+}
